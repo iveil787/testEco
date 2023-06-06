@@ -1,0 +1,33 @@
+<div nz-row class="mt-100">
+  <div nz-col nzSpan="12" nzOffset="6">
+    <nz-table #nzTable
+              [nzData]="resultData"
+              nzTableLayout="fixed"
+              [nzFrontPagination]="false">
+      <thead>
+      <tr>
+        <th nzWidth="60px"></th>
+        <th>Отдел</th>
+        <th>Настройки</th>
+      </tr>
+      </thead>
+      <tbody>
+      <ng-container *ngFor="let data of nzTable.data, let i = index">
+        <tr>
+          <td [nzExpand]="expandSet.has(data.ufSubdivisionId )"
+              (nzExpandChange)="onExpandChange(data.ufSubdivisionId, $event)"></td>
+          <td>{{ data.labelSubdivision}}</td>
+
+        </tr>
+        <tr [nzExpand]="expandSet.has(data.ufSubdivisionId)">
+          <div nz-row nzJustify="space-evenly"
+               *ngFor="let itemSUB of data.ufPositionId">
+            <td>{{ itemSUB.labelPosition}}</td>
+            <td>{{ itemSUB.settings}}</td>
+          </div>
+        </tr>
+      </ng-container>
+      </tbody>
+    </nz-table>
+  </div>
+</div>
