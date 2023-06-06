@@ -1,0 +1,184 @@
+{
+  "result": {
+    "structure": {
+      "SUB": {
+        "7196": "Администрация",
+        "7197": "Производственный отдел",
+        "12391": "Служба Охраны Труда"
+      },
+      "POS": {
+        "16754": "Генеральный директор",
+        "16755": "Главный бухгалтер",
+        "16756": "Главный инженер",
+        "16760": "Кладовщик",
+        "16758": "Начальник цеха",
+        "16757": "Специалист по охране труда",
+        "16759": "Токарь"
+      },
+      "DEP": [],
+      "STRUCTURE": [
+        {
+          "UF_SUBDIVISION_ID": 7196,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 0
+        },
+        {
+          "UF_SUBDIVISION_ID": 7196,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16754
+        },
+        {
+          "UF_SUBDIVISION_ID": 7196,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16755
+        },
+        {
+          "UF_SUBDIVISION_ID": 7196,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16756
+        },
+        {
+          "UF_SUBDIVISION_ID": 7196,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16757
+        },
+        {
+          "UF_SUBDIVISION_ID": 7197,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 0
+        },
+        {
+          "UF_SUBDIVISION_ID": 7197,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16760
+        },
+        {
+          "UF_SUBDIVISION_ID": 7197,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16758
+        },
+        {
+          "UF_SUBDIVISION_ID": 7197,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16759
+        },
+        {
+          "UF_SUBDIVISION_ID": 12391,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 0
+        },
+        {
+          "UF_SUBDIVISION_ID": 12391,
+          "UF_DEPARTMENT_ID": 0,
+          "UF_POSITION_ID": 16757
+        }
+      ]
+    },
+    "settings": {
+      "dates": [
+        "01.02.2018"
+      ],
+      "settings": {
+        "7197-0-16759": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7196-0-0": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7196-0-16754": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7196-0-16755": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7196-0-16756": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7196-0-16757": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7197-0-0": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7197-0-16760": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        },
+        "7197-0-16758": {
+          "UF_LNPA_ID": {
+            "value": [
+              1,
+              2,
+              3,
+              1322
+            ],
+            "date": "01.02.2018"
+          }
+        }
+      }
+    }
+  }
+}
