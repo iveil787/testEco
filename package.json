@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --base-href /test/",
+    "byuild": "ng build --base-href /testEco/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
