@@ -1,0 +1,13 @@
+<ng-container [formGroup]="parentForm">
+  <ng-container formGroupName="date">
+    <div>
+      <label>Месяц </label>
+      <input type="number" formControlName="month"/>
+    </div>
+    <div class="field">
+      <label>Год </label>
+      <input type="text" formControlName="year" readonly/>
+    </div>
+  </ng-container>
+</ng-container>
+

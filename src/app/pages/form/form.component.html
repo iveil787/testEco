@@ -1,0 +1,28 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div formArrayName="products">
+    <div *ngFor="let productGroup of products.controls; let i = index" [formGroupName]="i">
+      <div>
+        <label for="name">Наименование товара: </label>
+        <input type="text" id="name" formControlName="name">
+        <div *ngIf="productGroup.get('name')?.invalid && productGroup.get('name')?.touched">
+          Наименование товара обязательно
+        </div>
+      </div>
+      <div>
+        <label for="price">Цена товара: </label>
+        <input type="number" id="price" formControlName="price"
+               [value]="productGroup.get('price')?.value | thousandSeparator">
+        <div *ngIf="productGroup.get('price')?.invalid && productGroup.get('price')?.touched">
+          Цена товара обязательна
+        </div>
+      </div>
+      <!-- Кнопка для удаления товара из коллекции -->
+      <button type="button" (click)="removeProduct(i)">Удалить товар</button>
+    </div>
+  </div>
+
+  <app-date-input [parentForm]="productForm"></app-date-input>
+  <!-- Кнопка для добавления нового товара в коллекцию -->
+  <button type="button" (click)="addProduct()">Добавить товар</button>
+  <button type="submit" [disabled]="productForm.invalid">Сохранить</button>
+</form>

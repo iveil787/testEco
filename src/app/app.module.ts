@@ -11,18 +11,24 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NzButtonModule} from "ng-zorro-antd/button";
 import {NzTableModule} from "ng-zorro-antd/table";
 import {NzGridModule} from "ng-zorro-antd/grid";
+import { FormComponent } from './pages/form/form.component';
+import {ThousandSeparatorPipe} from "./pipes/thousand-separator.pipe";
+import { DateInputComponent } from './ layout/date-input/date-input.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    FormComponent,
+    ThousandSeparatorPipe,
+    DateInputComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,7 @@ registerLocaleData(en);
     NzButtonModule,
     NzTableModule,
     NzGridModule,
+    ReactiveFormsModule,
   ],
   providers: [TableService, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
