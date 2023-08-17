@@ -10,8 +10,11 @@
       </div>
       <div>
         <label for="price">Цена товара: </label>
-        <input type="number" id="price" formControlName="price"
-               [value]="productGroup.get('price')?.value | thousandSeparator">
+        <input type="text" id="price" formControlName="price"
+               [value]="productGroup.get('price')?.value | thousandSeparator"
+               (input)="productGroup.value.price = getValue($event)">
+        >
+
         <div *ngIf="productGroup.get('price')?.invalid && productGroup.get('price')?.touched">
           Цена товара обязательна
         </div>
@@ -22,6 +25,8 @@
   </div>
 
   <app-date-input [parentForm]="productForm"></app-date-input>
+
+  <app-date-control formControlName="month"></app-date-control>
   <!-- Кнопка для добавления нового товара в коллекцию -->
   <button type="button" (click)="addProduct()">Добавить товар</button>
   <button type="submit" [disabled]="productForm.invalid">Сохранить</button>

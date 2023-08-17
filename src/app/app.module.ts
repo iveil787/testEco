@@ -19,6 +19,7 @@ import {NzGridModule} from "ng-zorro-antd/grid";
 import { FormComponent } from './pages/form/form.component';
 import {ThousandSeparatorPipe} from "./pipes/thousand-separator.pipe";
 import { DateInputComponent } from './ layout/date-input/date-input.component';
+import { DateControlComponent } from './ layout/date-control/date-control.component';
 
 registerLocaleData(en);
 
@@ -28,7 +29,8 @@ registerLocaleData(en);
     TableComponent,
     FormComponent,
     ThousandSeparatorPipe,
-    DateInputComponent
+    DateInputComponent,
+    DateControlComponent
   ],
   imports: [
     BrowserModule,

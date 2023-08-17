@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-form',
@@ -16,12 +16,15 @@ export class FormComponent {
     private formBuilder: FormBuilder) {
     this.productForm = this.formBuilder.group({
       products: this.formBuilder.array([]),
+      month:['', Validators.required]
     });
   }
 
   ngOnInit(): void {
     // Добавьте первый пустой элемент в коллекцию
     this.addProduct();
+
+
   }
 
   addProduct(): void {
@@ -39,9 +42,12 @@ export class FormComponent {
   onSubmit(): void {
     if (this.productForm.valid) {
       const products = this.productForm.value.products;
-      console.log(this.productForm.value);
-      console.log(this.productForm)
       // Отправка данных на сервер или обработка коллекции товаров
     }
   }
+
+  getValue(event: Event): string {
+    return (event.target as HTMLInputElement).value.replace(/\s/g, '')
+  }
+
 }

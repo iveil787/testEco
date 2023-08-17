@@ -16,7 +16,6 @@ export class DateInputComponent implements OnInit {
 
   ngOnInit(): void {
     this.parentForm.addControl('date', this.formGroup);
-    console.log(this.parentForm.value.date)
     this.setFormValues()
   }
 
